@@ -93,7 +93,7 @@ public class StudentDaoImpl implements IStudentDao
 			connection=connection=jdbcUtil.getConnection();
 			if(connection!=null)
 			{
-			String query="update student set name=?,age=?,address=? where id=?";
+			String query="update studnet set sname=?,sage=? where sid=?";
 			pstm=connection.prepareStatement(query);
 			}
 			if(pstm!=null)
